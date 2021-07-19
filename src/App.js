@@ -16,9 +16,8 @@ function App() {
           className="link"
           href="https://www.nytimes.com/puzzles/spelling-bee"
           title="Click to go to the puzzle!"
-        >{`{ nytimes spelling bee }`}</a>
-        <h3>All you need to become a Genius!</h3>
-        <FaForumbee className="forum-bee" />
+        ><FaForumbee className="forum-bee" size={30} />{`{ nytimes spelling bee word puzzle }`}<FaForumbee className="forum-bee" size={30} /></a>
+        <h3>This app is all you need to become a Genius!</h3>
         <label className="letters-label">
           Enter the letters around the center of the honeycomb here:
         </label>
