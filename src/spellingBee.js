@@ -7,7 +7,7 @@ function spellingBee(letters, center) {
   letters = letters.toLowerCase();
   center = center.toLowerCase();
   const re = new RegExp(
-    "^([" + letters + "])*" + center + "+" + "([" + letters + "])*$"
+    `^([${letters}])*${center}+([${letters}])*$`
   );
   // gather valid words
   for (let w of words) {
