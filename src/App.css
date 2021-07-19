@@ -5,6 +5,9 @@
 .App-logo {
   height: 20vmin;
   pointer-events: none;
+  background-color: yellow;
+  border-radius: 50%;
+  opacity: 0.9;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,17 +18,13 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: yellow;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +34,52 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+input {
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: lightgoldenrodyellow;
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+.center-input {
+  width: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.forum-bee {
+  background-color: yellow;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+button {
+  background-color: yellow;
+  color: black;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: orange;
+}
+.link:hover {
+  color: #282c34;
+  font-weight: bold;
 }
