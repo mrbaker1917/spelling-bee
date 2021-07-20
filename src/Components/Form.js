@@ -1,5 +1,5 @@
 import React from "react";
-import SpellingBee from "../spellingBee"
+import SpellingBee from "./spellingBee"
 
 
 export default class Form extends React.Component {
@@ -16,8 +16,8 @@ export default class Form extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    const words = SpellingBee(this.state.letters, this.state.center)
-    console.log(words)
+    // const words = SpellingBee(this.state.letters, this.state.center)
+    console.log(this.state)
   }
 
   handleInputChange(event) {
