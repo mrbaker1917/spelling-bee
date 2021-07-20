@@ -1,5 +1,4 @@
 import React from "react";
-import SpellingBee from "./spellingBee"
 
 
 export default class Form extends React.Component {
