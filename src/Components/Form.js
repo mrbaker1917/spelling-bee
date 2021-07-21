@@ -47,16 +47,18 @@ export default class Form extends React.Component {
             <h2>Possible Pangrams:</h2>
             <ul>
               {this.state.pangrams.map((p) => {
-                return <li key={p}>{p}</li>;
+                return <li key={p}>{p.toUpperCase()}</li>;
               })}
             </ul>
           </div>
-          <h3>All possible words:</h3>
-          <ul>
-            {this.state.c_words.map((word) => {
-              return <li key={word}>{word}</li>;
-            })}
-          </ul>
+          <div className="all-words">
+            <h2>All Possible Words:</h2>
+            <ul>
+              {this.state.c_words.map((word) => {
+                return <li key={word}>{word.toUpperCase()}</li>;
+              })}
+            </ul>
+          </div>
         </React.Fragment>
       );
     }
@@ -81,8 +83,8 @@ export default class Form extends React.Component {
           <input
             type="text"
             name="center"
-            className="center"
-            placeholder="center letter"
+            className="center-input"
+            placeholder="center"
             autoComplete="off"
             value={this.state.center}
             onChange={this.handleInputChange}
