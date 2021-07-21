@@ -2,8 +2,8 @@
 // const text = fs.readFileSync("C:/Users/Asus/spelling-bee/src/words_alpha.txt", "utf-8");
 // const words = text.split("\r\n");
 
-import { words } from "./data.js"
-console.log(words)
+// import { words } from "./data.js"
+// console.log(words)
 
 // function SpellingBee(letters, center) {
 //   const result = [];

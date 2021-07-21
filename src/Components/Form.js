@@ -7,6 +7,7 @@ export default class Form extends React.Component {
     this.state = {
       letters: "",
       center: "",
+      clicked: false,
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -33,8 +34,14 @@ export default class Form extends React.Component {
   }
 
   render() {
+    if (this.state.clicked === true) {
+      return (
+        <div>{this.c_words}</div>
+      )
+    }
     return (
-      <form className="form" onSubmit={this.handleSubmit}>
+    <React.Fragment>
+      <form className="form">
       <label htmlFor="letters" className="letters">
         Enter letters here:
       </label>
@@ -63,11 +70,12 @@ export default class Form extends React.Component {
           className="btn"
           type="submit"
           value="Submit"
+          onClick={() => this.setState({clicked: true})}
         >
           SUBMIT
         </button>
     </form>
-    )
-  }
+    </React.Fragment>
+    )}
 
 }
