@@ -25,18 +25,6 @@ function App() {
         <h3>This app is all you need to become a Genius!</h3>
       </div>
       <Form />
-      {/* <form>
-        <label className="letters-label">
-          Enter the letters around the center of the honeycomb here:
-        </label>
-        <input name="letters" className="letters-input"></input>
-        <label className="center-label">Enter the center letter here:</label>
-        <input name="center" className="center-input"></input>
-        <p>Press the submit button!</p>
-        <button className="btn" type="submit">
-          Submit
-        </button>
-      </form> */}
     </div>
   );
 }

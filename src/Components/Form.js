@@ -1,5 +1,5 @@
 import React from "react";
-
+import getWords from "../utils/api";
 
 export default class Form extends React.Component {
   constructor(props) {
@@ -15,8 +15,12 @@ export default class Form extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    // const words = SpellingBee(this.state.letters, this.state.center)
-    console.log(this.state)
+    const {letters, center} = this.state;
+    const re = new RegExp(`^([${letters}])*${center}+([${letters}])*$`);
+    getWords().then((words) => {
+    let c_words = words.filter(word => word.match(re) !== null);
+    console.log(c_words)
+    })
   }
 
   handleInputChange(event) {
