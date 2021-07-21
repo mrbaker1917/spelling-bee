@@ -1,6 +1,5 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { FaForumbee } from "react-icons/fa";
 import Form from "./Components/Form"
 
 function App() {
@@ -18,9 +17,7 @@ function App() {
           href="https://www.nytimes.com/puzzles/spelling-bee"
           title="Click to go to the puzzle!"
         >
-          <FaForumbee className="forum-bee" size={30} />
           {`{ nytimes spelling bee word puzzle }`}
-          <FaForumbee className="forum-bee" size={30} />
         </a>
         <h3>This app is all you need to become a Genius!</h3>
       </div>
