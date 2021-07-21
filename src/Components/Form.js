@@ -19,6 +19,9 @@ export default class Form extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     const { letters, center } = this.state;
+    if (letters === "" || center === "") {
+      this.refreshPage()
+    }
     const re = new RegExp(`^([${letters}])*${center}+([${letters}])*$`);
     getWords().then((words) => {
       this.setState({
