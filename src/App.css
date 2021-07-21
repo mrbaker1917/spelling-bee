@@ -104,11 +104,23 @@ ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #FBB300;
+  border-radius: 3px;
 }
 
 li {
   list-style: none;
   padding: 5px;
-  font-weight: bold;
+  font-weight: 500;
+  width: 80px;
+  margin: 5px;
+  background-color: #282c34;
+  color: #FBB300;
+  border-radius: 2px;
+}
+
+li:hover {
+  font-weight: 900;
 }
