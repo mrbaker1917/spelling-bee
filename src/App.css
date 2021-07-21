@@ -74,6 +74,7 @@ h2 {
   padding: 20px;
   width: 90%;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 form {
@@ -110,7 +111,7 @@ form label {
 
 .link {
   text-decoration: none;
-  color: red;
+  color: darkgoldenrod;
 }
 .link:hover {
   color: #282c34;
