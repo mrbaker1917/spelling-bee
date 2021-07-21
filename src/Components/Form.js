@@ -14,6 +14,7 @@ export default class Form extends React.Component {
 
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.refreshPage = this.refreshPage.bind(this);
   }
   handleSubmit(event) {
     event.preventDefault();
@@ -39,6 +40,10 @@ export default class Form extends React.Component {
     });
   }
 
+  refreshPage() {
+    return window.location.reload();
+  }
+
   render() {
     if (this.state.clicked === true) {
       return (
@@ -59,6 +64,7 @@ export default class Form extends React.Component {
               })}
             </ul>
           </div>
+          <button className="btn" onClick={this.refreshPage}>Reset</button>
         </React.Fragment>
       );
     }
@@ -66,7 +72,7 @@ export default class Form extends React.Component {
       <React.Fragment>
         <form className="form" onSubmit={this.handleSubmit}>
           <label htmlFor="letters" className="letters">
-            Enter letters here:
+            Enter non-center letters here:
           </label>
           <input
             type="text"

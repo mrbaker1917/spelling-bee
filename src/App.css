@@ -51,9 +51,10 @@ input {
   margin: 10px;
   background-color:#FEDF4E;
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1.2em;
   display: flex;
   text-align: center;
+  border: 5px solid black;
 }
 
 h2 {
@@ -102,6 +103,7 @@ form label {
   font-weight: bold;
   cursor: pointer;
   margin-top: 20px;
+  border: 5px solid black;
 }
 
 .btn:hover {
