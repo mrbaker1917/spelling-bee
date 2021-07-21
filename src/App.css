@@ -100,6 +100,12 @@ form {
   padding: 5px;
 }
 
+.pangrams {
+  background-color: #FBB300;
+  display: flex;
+  flex-direction: column;
+}
+
 ul {
   display: flex;
   flex-direction: row;

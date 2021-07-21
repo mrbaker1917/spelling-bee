@@ -23,7 +23,9 @@ export default class Form extends React.Component {
       this.setState({
         clicked: true,
         c_words: Object.values(words).filter((word) => word.match(re) !== null),
-        pangrams: Object.values(this.state.c_words).filter((w) => w.length > 6)
+        pangrams: Object.values(words).filter(
+          (w) => w.length > 6 && w.match(re) !== null
+        ),
       });
     });
   }
@@ -41,17 +43,20 @@ export default class Form extends React.Component {
     if (this.state.clicked === true) {
       return (
         <React.Fragment>
-          <h2>Possible Pangrams</h2>
-        <ul>
-          {this.state.pangrams.map((p => {
-            return <li key={p}>{p}</li>
-          }))}
-        </ul>
-        <ul>
-          {this.state.c_words.map((word) => {
-            return <li key={word}>{word}</li>;
-          })}
-        </ul>
+          <div className="pangrams">
+            <h2>Possible Pangrams:</h2>
+            <ul>
+              {this.state.pangrams.map((p) => {
+                return <li key={p}>{p}</li>;
+              })}
+            </ul>
+          </div>
+          <h3>All possible words:</h3>
+          <ul>
+            {this.state.c_words.map((word) => {
+              return <li key={word}>{word}</li>;
+            })}
+          </ul>
         </React.Fragment>
       );
     }
