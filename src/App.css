@@ -5,6 +5,10 @@ body {
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -15,11 +19,11 @@ body {
   opacity: 0.9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo- infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   min-height: 30vh;
@@ -52,6 +56,14 @@ input {
   text-align: center;
 }
 
+h2 {
+  width: 30%;
+  background-color: white;
+  margin-bottom: -10px;
+  padding: 10px 10px 30px 10px;
+  border-radius: 10px;
+}
+
 .center-input {
   width: 100px;
 }
@@ -60,6 +72,8 @@ input {
   background-color: white;
   opacity: 0.8;
   padding: 20px;
+  width: 90%;
+  border-radius: 10px;
 }
 
 form {
@@ -70,6 +84,8 @@ form {
   background-color: white;
   opacity: 0.8;
   padding: 20px;
+  width: 50%;
+  border-radius: 10px;
 }
 
 form label {
@@ -77,18 +93,19 @@ form label {
 }
 
 .btn {
-  background-color: #FBB300;
+  background-color: #FED71B;
   color: black;
   border-radius: 5px;
-  width: 100px;
-  height: 30px;
+  width: 150px;
+  height: 40px;
   font-weight: bold;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .btn:hover {
   background-color: black;
-  color: #FBB300;
+  color: #FED71B;
 }
 
 .link {
@@ -102,18 +119,22 @@ form label {
 }
 
 .pangrams {
-  background-color: #FBB300;
+  /* background-color: #FED71B; */
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
   opacity: 0.9;
+  justify-content: center;
+  align-items: center;
 }
 
 .all-words {
-  background-color: #FBB300;
+  /* background-color: #FED71B; */
   display: flex;
   flex-direction: column;
   opacity: 0.9;
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
@@ -122,8 +143,11 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: #FBB300;
-  border-radius: 3px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: -10px;
+  padding: 20px;
+  width: 90%;
 }
 
 li {
@@ -133,8 +157,8 @@ li {
   width: 100px;
   margin: 5px;
   background-color: #282c34;
-  color: #FBB300;
-  border-radius: 2px;
+  color: #FED71B;
+  border-radius: 4px;
 }
 
 li:hover {

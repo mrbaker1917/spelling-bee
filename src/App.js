@@ -10,6 +10,7 @@ function App() {
       </header>
       <div className="intro">
         <h1>Welcome to Spelling Bee Helper!</h1>
+        <h3>This app is all you need to become a Genius!</h3>
         <a
           rel="noreferrer"
           target="_blank"
@@ -19,7 +20,6 @@ function App() {
         >
           {`{ nytimes spelling bee word puzzle }`}
         </a>
-        <h3>This app is all you need to become a Genius!</h3>
       </div>
       <Form />
     </div>
