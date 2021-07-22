@@ -18,9 +18,13 @@ export default class Form extends React.Component {
   }
   handleSubmit(event) {
     event.preventDefault();
+    const re2 = new RegExp(/^[a-z]+$/i);
     let { letters, center } = this.state;
     if (letters === "" || center === "") {
       this.refreshPage()
+    }
+    if ((letters.match(re2) === null) || (center.match(re2) === null)) {
+      this.refreshPage();
     }
     letters = letters.slice(0, 6);
     center = center.slice(0, 1);
