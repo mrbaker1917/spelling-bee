@@ -18,10 +18,13 @@ export default class Form extends React.Component {
   }
   handleSubmit(event) {
     event.preventDefault();
-    const { letters, center } = this.state;
+    let { letters, center } = this.state;
     if (letters === "" || center === "") {
       this.refreshPage()
     }
+    letters = letters.slice(0, 6);
+    center = center.slice(0, 1);
+
     const re = new RegExp(`^([${letters}])*${center}+([${letters}])*$`);
     getWords().then((words) => {
       this.setState({
