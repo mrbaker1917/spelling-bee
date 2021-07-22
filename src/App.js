@@ -10,7 +10,10 @@ function App() {
       </header>
       <div className="intro">
         <h1>Welcome to Spelling Bee Helper!</h1>
-        <h3>This app is all you need to become a Genius!</h3>
+        <h3>This app is all you need to become a <button 
+        className="btn-genius" 
+        title="Genius is the highest level in the nytimes spelling bee puzzle."
+        >Genius</button>!</h3>
         <a
           rel="noreferrer"
           target="_blank"

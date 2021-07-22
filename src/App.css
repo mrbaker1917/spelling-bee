@@ -25,6 +25,21 @@ body {
   }
 }
 
+.btn-genius {
+  background-color: inherit;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.btn-genius:hover {
+  background-color: black;
+  color: #FED71B;
+  cursor: pointer;
+}
+
 .App-header {
   min-height: 30vh;
   display: flex;
