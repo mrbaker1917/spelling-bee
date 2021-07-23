@@ -49,15 +49,18 @@ export default class Form extends React.Component {
     for (let l of letters) {
       dict2[l] = 0;
     }
-    console.log(dict2)
-    for (let c of w) {
-      if (c in dict2) {
-        continue;
+    for (let h of w) {
+      if (h in dict2) {
+        dict2[h] += 1;
       } else {
         return false;
       }
     }
-    return true;
+    if (dict2[c] === 0) {
+      return false;
+    } else {
+      return true;
+    }
   }
 
   handleSubmit(event) {
