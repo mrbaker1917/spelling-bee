@@ -17,16 +17,15 @@ function App() {
             <button className="btn-genius">Genius</button>!
           </Tooltip>
         </h3>
-        <Tooltip text="Click to go to the puzzle!">
         <a
           rel="noreferrer"
           target="_blank"
           className="link"
           href="https://www.nytimes.com/puzzles/spelling-bee"
+          title="Click to go to the puzzle!"
         >
           {`{ nytimes spelling bee word puzzle }`}
         </a>
-        </Tooltip>
       </div>
       <Form />
     </div>
