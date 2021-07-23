@@ -15,6 +15,8 @@ export default class Form extends React.Component {
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.refreshPage = this.refreshPage.bind(this);
+    this.pangramCheck = this.pangramCheck.bind(this);
+    this.wordCheck = this.wordCheck.bind(this);
   }
 
   pangramCheck(word) {
@@ -39,6 +41,25 @@ export default class Form extends React.Component {
     return true;
   }
 
+  wordCheck(w) {
+    const c = this.state.center;
+    const dict2 = {};
+    dict2[c] = 0;
+    const letters = this.state.letters;
+    for (let l of letters) {
+      dict2[l] = 0;
+    }
+    console.log(dict2)
+    for (let c of w) {
+      if (c in dict2) {
+        continue;
+      } else {
+        return false;
+      }
+    }
+    return true;
+  }
+
   handleSubmit(event) {
     event.preventDefault();
     const re2 = new RegExp(/^[a-z]+$/i);
@@ -52,12 +73,12 @@ export default class Form extends React.Component {
     letters = letters.slice(0, 6);
     center = center.slice(0, 1);
 
-    const re = new RegExp(`^([${letters}])*${center}+([${letters}])*$`);
+    // const re = new RegExp(`^([${letters}])*${center}+([${letters}])*$`);
     this.pangramCheck("dog");
     getWords().then((words) => {
       this.setState({
         clicked: true,
-        c_words: Object.values(words).filter((word) => word.match(re) !== null),
+        c_words: Object.values(words).filter((w) => this.wordCheck(w)),
         pangrams: Object.values(words).filter((w) => this.pangramCheck(w)),
       });
     });
