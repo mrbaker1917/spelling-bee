@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Form from "./Components/Form"
+import Form from "./Components/Form";
+import Tooltip from "./Components/Tooltip";
 
 function App() {
   return (
@@ -10,19 +11,22 @@ function App() {
       </header>
       <div className="intro">
         <h1>Welcome to Spelling Bee Helper!</h1>
-        <h3>This app is all you need to become a <button 
-        className="btn-genius" 
-        title="Genius is the highest level in the nytimes spelling bee puzzle."
-        >Genius</button>!</h3>
+        <h3>
+          This app is all you need to become a
+          <Tooltip text="Genius is the highest point level in the nytimes spelling bee.">
+            <button className="btn-genius">Genius</button>!
+          </Tooltip>
+        </h3>
+        <Tooltip text="Click to go to the puzzle!">
         <a
           rel="noreferrer"
           target="_blank"
           className="link"
           href="https://www.nytimes.com/puzzles/spelling-bee"
-          title="Click to go to the puzzle!"
         >
           {`{ nytimes spelling bee word puzzle }`}
         </a>
+        </Tooltip>
       </div>
       <Form />
     </div>
