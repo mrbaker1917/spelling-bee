@@ -116,7 +116,7 @@ export default class Form extends React.Component {
             </ul>
           </div>
           <div className="all-words">
-            <h2>All Possible Words:</h2>
+            <h2>All Possible ({this.state.c_words.length}) Words:</h2>
             <ul>
               {this.state.c_words.map((word) => {
                 return <li key={word}>{word.toUpperCase()}</li>;
