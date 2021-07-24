@@ -15,7 +15,7 @@ body {
 .App-logo {
   height: 20vmin;
   background-color: whitesmoke;
-  opacity: 0.7;
+  opacity: 0.8;
   border-radius: 60%;
 }
 
@@ -29,11 +29,11 @@ body {
 @keyframes App-logo-spin {
   from {
     transform: rotate(-90deg);
-    margin-left: 200px;
+    margin-left: 800px;
   }
   to {
     transform: rotate(90deg);
-    margin-right: 200px;
+    margin-right: 800px;
   }
 }
 
