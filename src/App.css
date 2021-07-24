@@ -14,15 +14,13 @@ body {
 
 .App-logo {
   height: 20vmin;
-  pointer-events: none;
   background-color: whitesmoke;
-  border-radius: 50%;
-  opacity: 0.9;
+  border-radius: 60%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 10s linear;
+    animation: App-logo-spin infinite 10s step-end;
   }
 }
 
