@@ -1,6 +1,7 @@
 body {
   background-color: lightyellow;
   background: url("https://cdn.pixabay.com/photo/2021/04/03/12/12/honeycomb-6147355_960_720.jpg");
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .App {
@@ -34,6 +35,7 @@ body {
   font-size: 1em;
   border: 1px solid lavender;
   transition: background-color 2s ease-out 100ms;
+  margin-top: 10px;
 }
 
 .btn-genius:hover {
