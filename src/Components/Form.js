@@ -102,9 +102,6 @@ export default class Form extends React.Component {
     if (this.state.clicked === true) {
       return (
         <React.Fragment>
-          <button className="btn" onClick={this.refreshPage}>
-            Reset
-          </button>
           <div className="pangrams">
             <h2>Possible Pangrams:</h2>
             <ul>
@@ -113,6 +110,9 @@ export default class Form extends React.Component {
               })}
             </ul>
           </div>
+          <button className="btn" onClick={this.refreshPage}>
+            Reset
+          </button>
           <div className="all-words">
             <h2>All Possible ({this.state.c_words.length}) Words:</h2>
             <ul>
