@@ -13,19 +13,20 @@ function App() {
         <h1>Welcome to Spelling Bee Helper!</h1>
         <h3>
           This app is all you need to become a
-          <Tooltip text="Genius is the highest point level in the nytimes spelling bee.">
+          <Tooltip text="<= 'Genius' is the highest point level in the nytimes spelling bee.">
             <button className="btn-genius">Genius</button>!
           </Tooltip>
         </h3>
+        <Tooltip text="<= Click to go to the puzzle!">
         <a
           rel="noreferrer"
           target="_blank"
           className="link"
           href="https://www.nytimes.com/puzzles/spelling-bee"
-          title="Click to go to the puzzle!"
         >
           {`{ nytimes spelling bee word puzzle }`}
         </a>
+        </Tooltip>
       </div>
       <Form />
     </div>

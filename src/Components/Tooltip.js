@@ -9,18 +9,18 @@ const styles = {
     boxSizing: "border-box",
     position: "absolute",
     width: "200px",
-    top: "10%",
-    left: "70%",
+    top: "5%",
+    left: "75%",
     marginLeft: "-80px",
     borderRadius: "5px",
-    backgroundColor: "goldenrod",
+    backgroundColor: "gray",
     padding: "10px",
     marginBottom: "5px",
     color: "#fff",
     textAlign: "center",
     fontSize: "12px",
     fontWeight: "500"
-  },
+  }
 };
 
 export default class Tooltip extends React.Component {
@@ -50,7 +50,7 @@ export default class Tooltip extends React.Component {
     const { hovering } = this.state;
     return (
       <div onMouseOver={this.mouseOver} onMouseOut={this.mouseOut} style={styles.container}>
-        {hovering === true && <div style={styles.tooltip}>{text}</div>}
+        {hovering === true && <div className="tooltip" style={styles.tooltip}>{text}</div>}
         {children}
       </div>);
   }
