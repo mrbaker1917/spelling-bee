@@ -76,8 +76,6 @@ export default class Form extends React.Component {
     letters = letters.slice(0, 6);
     center = center.slice(0, 1);
 
-    // const re = new RegExp(`^([${letters}])*${center}+([${letters}])*$`);
-    this.pangramCheck("dog");
     getWords().then((words) => {
       this.setState({
         clicked: true,
