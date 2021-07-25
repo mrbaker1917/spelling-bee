@@ -68,9 +68,9 @@ body {
   background: inherit;
   display: inline;
   color: white;
-  padding: 10px;
+  padding: 5px;
   margin-left: 20px;
-  border-radius: 20% 10px 10px 20%;
+  border-radius: 5px;
   transition: background-color 2s ease-out 100ms;
 }
 
@@ -149,6 +149,8 @@ form label {
 .link {
   text-decoration: none;
   color: darkgoldenrod;
+  display: block;
+  margin-bottom: 20px;
 }
 .link:hover {
   color: #282c34;
