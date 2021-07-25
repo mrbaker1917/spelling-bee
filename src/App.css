@@ -54,16 +54,19 @@ body {
   cursor: pointer;
 }
 
-.App-header {
-  min-height: 30vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-genius:hover + .genius-tip {
+  background-color: gray;
 }
 
+.genius-tip {
+  background: inherit;
+  display: inline;
+  color: white;
+  padding: 5px;
+  margin-left: 20px;
+  border-radius: 5px;
+  transition: background-color 2s ease-out 100ms;
+}
 .click-link {
   background: inherit;
   display: inline;
@@ -74,9 +77,18 @@ body {
   transition: background-color 2s ease-out 100ms;
 }
 
+.App-header {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
 .link:hover + .click-link{
   background-color: gray;
-  color: white;
 }
 
 input {
