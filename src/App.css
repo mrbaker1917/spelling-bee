@@ -21,7 +21,7 @@ body {
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 2s 100ms;
+    animation: App-logo-spin infinite 5s 100ms;
     animation-direction: alternate;
   }
 }
@@ -61,6 +61,21 @@ body {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.click-link {
+  background: inherit;
+  display: inline;
+  color: white;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 20% 10px 10px 20%;
+  transition: background-color 2s ease-out 100ms;
+}
+
+.link:hover + .click-link{
+  background-color: gray;
   color: white;
 }
 
