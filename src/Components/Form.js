@@ -90,7 +90,7 @@ export default class Form extends React.Component {
     const value = target.value;
     const name = target.name;
     this.setState({
-      [name]: value,
+      [name]: value.toLowerCase(),
     });
   }
 
