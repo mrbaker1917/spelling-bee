@@ -25,10 +25,10 @@ class App extends React.Component {
       <ThemeProvider value={this.state}>
         <div className="App">
           <header className="App-header">
-          <Nav />
             <img src={logo} className="App-logo" alt="logo" />
           </header>
           <div className="intro">
+            <Nav />
             <h1>Welcome to Spelling Bee Helper!</h1>
             <h3 className="genius-h3">
               This app is all you need to become a
