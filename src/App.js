@@ -29,21 +29,17 @@ class App extends React.Component {
           </header>
           <div className="intro">
             <Nav />
-            <h1>Welcome to Spelling Bee Helper!</h1>
+            <h1>Welcome to Wordle Solver!</h1>
             <h3 className="genius-h3">
-              This app is all you need to become a
-              <span className="btn-genius">Genius</span>!
+              This app will help you to solve wordle everyday!
             </h3>
-            <div className="genius-tip">
-              'Genius' is the highest point level on NYT Spelling Bee Puzzle.
-            </div>
             <a
               rel="noreferrer"
               target="_blank"
               className="link"
-              href="https://www.nytimes.com/puzzles/spelling-bee"
+              href="https://www.powerlanguage.co.uk/wordle/"
             >
-              {`{ nytimes spelling bee word puzzle }`}
+              {`{ wordle }`}
             </a>
             <div className="click-link">Click to go to the puzzle!</div>
           </div>
