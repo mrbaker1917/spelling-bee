@@ -129,7 +129,7 @@ export default class Form extends React.Component {
     }
     return (
       <React.Fragment>
-        <form className="form" onSubmit={this.handleSubmit}>
+        <form className="form" netlify onSubmit={this.handleSubmit}>
           <label htmlFor="letters" className="letters">
             Enter non-center letters here:
           </label>
