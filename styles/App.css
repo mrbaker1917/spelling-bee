@@ -158,6 +158,18 @@ body {
   
   .intro h3 {
     font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .genius-h3 {
+    display: inline-block;
+    margin: 0 2px;
+  }
+  
+  .btn-genius {
+    margin: 2px 4px;
+    display: inline-block;
   }
   
   form {
