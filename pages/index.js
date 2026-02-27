@@ -12,6 +12,9 @@ export default function Home() {
         <meta name="description" content="Spelling Bee Helper - Become a Genius!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
       </Head>
       
       <div className="App">
@@ -28,15 +31,17 @@ export default function Home() {
           <div className="genius-tip">
             'Genius' is the highest point level on NYT Spelling Bee Puzzle.
           </div>
-          <a
-            rel="noreferrer"
-            target="_blank"
-            className="link"
-            href="https://www.nytimes.com/puzzles/spelling-bee"
-          >
-            {`{ nytimes spelling bee word puzzle }`}
-          </a>
-          <div className="click-link">Click to go to the puzzle!</div>
+          <div className="link-container">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              className="link"
+              href="https://www.nytimes.com/puzzles/spelling-bee"
+            >
+              {`{ nytimes spelling bee word puzzle }`}
+            </a>
+            <div className="click-link">Click to go to the puzzle!</div>
+          </div>
         </div>
         <Form />
       </div>
