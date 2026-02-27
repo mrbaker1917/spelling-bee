@@ -136,6 +136,78 @@ body {
   margin-bottom: 20px;
 }
 
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .App-header {
+    min-height: 10vh;
+    margin-bottom: 10px;
+  }
+  
+  .App-logo {
+    display: none;
+  }
+  
+  .intro {
+    padding: 20px;
+    width: 95%;
+  }
+  
+  .intro h1 {
+    font-size: 2rem;
+  }
+  
+  .intro h3 {
+    font-size: 1.1em;
+  }
+  
+  form {
+    padding: 20px;
+    width: 95%;
+  }
+  
+  input {
+    width: 200px;
+    height: 45px;
+    margin: 10px;
+    font-size: 1em;
+  }
+  
+  .btn {
+    width: 150px;
+    height: 45px;
+    font-size: 1em;
+    margin: 15px;
+  }
+  
+  .link {
+    padding: 12px 20px;
+    font-size: 0.9em;
+  }
+  
+  .genius-tip, .click-link {
+    padding: 8px 15px;
+    font-size: 0.85em;
+  }
+  
+  ul {
+    padding: 15px;
+    width: 95%;
+  }
+  
+  li {
+    min-width: 100px;
+    padding: 8px 12px;
+    margin: 4px;
+    font-size: 0.8em;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+    padding: 15px 20px;
+    min-width: 200px;
+  }
+}
+
 .btn-genius:hover + .genius-tip,
 .genius-h3:hover + .genius-tip {
   opacity: 1;
