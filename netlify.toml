@@ -2,6 +2,9 @@
   publish = "out"
   command = "npm run build"
 
+[build.environment]
+  NODE_VERSION = "18.19.0"
+
 # SPA fallback for client-side routing (if needed)
 [[redirects]]
   from = "/*"
