@@ -1,6 +1,6 @@
 /* CSS Variables for theming */
 :root {
-  --bg-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --bg-primary: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%);
   --bg-card: rgba(255, 255, 255, 0.95);
   --bg-card-blur: blur(10px);
   --text-primary: #2d3436;
@@ -8,22 +8,22 @@
   --text-on-dark: white;
   --border-glass: rgba(255, 255, 255, 0.3);
   --shadow-light: rgba(0, 0, 0, 0.1);
-  --gradient-genius: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --gradient-button: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
-  --gradient-input: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+  --gradient-genius: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+  --gradient-button: linear-gradient(135deg, #f39c12 0%, #d35400 100%);
+  --gradient-input: linear-gradient(135deg, #f4d03f 0%, #f39c12 100%);
 }
 
 .dark-theme {
-  --bg-primary: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
+  --bg-primary: linear-gradient(135deg, #b8860b 0%, #8b4513 100%);
   --bg-card: rgba(45, 52, 54, 0.95);
   --text-primary: #ddd;
   --text-secondary: #b2bec3;
   --text-on-dark: #ddd;
-  --border-glass: rgba(255, 255, 255, 0.1);
+  --border-glass: rgba(255, 193, 7, 0.2);
   --shadow-light: rgba(0, 0, 0, 0.3);
-  --gradient-genius: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
-  --gradient-button: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
-  --gradient-input: linear-gradient(135deg, #fdcb6e 0%, #e17055 100%);
+  --gradient-genius: linear-gradient(135deg, #f1c40f 0%, #f39c12 100%);
+  --gradient-button: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+  --gradient-input: linear-gradient(135deg, #f1c40f 0%, #f39c12 100%);
 }
 
 body {
@@ -466,6 +466,38 @@ li:hover {
   cursor: pointer;
   border: 1px solid var(--border-glass);
   box-shadow: 0 4px 15px var(--shadow-light);
+}
+
+.theme-toggle-container {
+  position: relative;
+  display: inline-block;
+}
+
+.theme-tooltip {
+  background: var(--gradient-genius);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.85em;
+  font-weight: 500;
+  box-shadow: 0 4px 15px var(--shadow-light);
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  margin-top: 8px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.theme-toggle-container:hover .theme-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
 }
 
 .nav button:hover {
