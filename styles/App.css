@@ -447,7 +447,7 @@ li {
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 li:hover {
