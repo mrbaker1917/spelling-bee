@@ -70,23 +70,29 @@ body {
 }
 
 .btn-genius {
-  background: var(--gradient-input);
-  color: var(--text-primary);
-  padding: 8px 15px;
-  margin-left: 8px;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1em;
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  margin-left: 0;
+  border-radius: 0;
+  font-weight: inherit;
+  font-size: inherit;
   border: none;
   transition: all 0.3s ease;
   cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 .btn-genius:hover {
   background: linear-gradient(135deg, #fdcb6e 0%, #e84393 100%);
   color: white;
+  padding: 8px 15px;
+  margin-left: 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   transform: translateY(-1px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }

@@ -29,7 +29,7 @@ export default function Home() {
           <h1>Welcome to Spelling Bee Helper!</h1>
           <h3 className="genius-h3">
             This app is all you need to become a
-            <span className="btn-genius">Genius</span>!
+            <span className="btn-genius"> Genius</span>!
           </h3>
           <div className="genius-tip">
             'Genius' is the highest point level on NYT Spelling Bee Puzzle.
