@@ -8,7 +8,7 @@ class MyApp extends React.Component {
     super(props);
 
     this.state = {
-      theme: "light",
+      theme: "dark",
       toggleTheme: () => {
         this.setState(({ theme }) => ({
           theme: theme === "light" ? "dark" : "light",
