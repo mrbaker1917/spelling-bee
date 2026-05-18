@@ -373,6 +373,25 @@ form label {
   background: linear-gradient(135deg, #5a4fcf 0%, #8b7cf8 100%);
 }
 
+.btn-reset-floating {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  margin: 0;
+  z-index: 1000;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+  .btn-reset-floating {
+    right: 12px;
+    bottom: 12px;
+    width: 150px;
+    height: 46px;
+    font-size: 1em;
+  }
+}
+
 .link-container {
   display: flex;
   flex-direction: column;
