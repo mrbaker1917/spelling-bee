@@ -32,6 +32,10 @@
       "react-app/jest"
     ]
   },
+  "overrides": {
+    "postcss": "^8.5.25",
+    "sharp": "^0.35.0"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -45,6 +49,6 @@
     ]
   },
   "allowScripts": {
-    "sharp@0.34.5": true
+    "sharp@0.35.3": true
   }
 }
